@@ -1,5 +1,5 @@
-import './views/home/home_view.dart';
 import 'package:flutter/material.dart';
+import '../core/views/challenge/challenge_view.dart';
 
 class AppWidget extends StatelessWidget {
   @override
@@ -7,7 +7,7 @@ class AppWidget extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "DevQuiz",
-      home: HomeView(),
+      home: ChallengeView(),
     );
   }
 }

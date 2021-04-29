@@ -15,12 +15,18 @@ class _HomeViewState extends State<HomeView> {
     return Scaffold(
       appBar: AppBarComponent(),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 25),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: <Widget>[
+            SizedBox(
+              height: 24,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
+                SizedBox(
+                  height: 24,
+                ),
                 LevelButtonComponent(
                   label: 'Facil',
                 ),
@@ -35,7 +41,20 @@ class _HomeViewState extends State<HomeView> {
                 ),
               ],
             ),
-            QuizCardComponent(),
+            SizedBox(
+              height: 24,
+            ),
+            Expanded(
+                child: GridView.count(
+              crossAxisCount: 2,
+              crossAxisSpacing: 16,
+              mainAxisSpacing: 16,
+              children: <Widget>[
+                QuizCardComponent(),
+                QuizCardComponent(),
+                QuizCardComponent()
+              ],
+            )),
           ],
         ),
       ),
