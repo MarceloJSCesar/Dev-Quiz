@@ -14,6 +14,7 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarComponent(),
+      // when layout is finished and receiving data create a specific file to body
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
